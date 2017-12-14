@@ -1,0 +1,45 @@
+{
+  "name": "nest-typescript-starter",
+  "version": "1.0.0",
+  "description": "Nest TypeScript starter repository",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:watch": "nodemon",
+    "prestart:prod": "tsc",
+    "start:prod": "node dist/server.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^4.3.0",
+    "@nestjs/core": "^4.3.0",
+    "@nestjs/cqrs": "^4.0.1",
+    "@nestjs/microservices": "^4.3.0",
+    "@nestjs/testing": "^4.3.0",
+    "@nestjs/websockets": "^4.3.0",
+    "@types/passport-jwt": "^2.0.24",
+    "amqplib": "^0.5.1",
+    "body-parser": "^1.17.1",
+    "class-transformer": "^0.1.7",
+    "class-validator": "^0.7.2",
+    "color-cli": "^0.1.0",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.13",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.0",
+    "redis": "^2.7.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "typescript": "^2.4.2",
+    "ws": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.4",
+    "@types/mongoose": "^4.7.23",
+    "@types/node": "^8.0.28",
+    "@types/ws": "^3.0.2",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "tslint-config-prettier": "^1.6.0"
+  }
+}
