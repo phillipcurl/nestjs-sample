@@ -16,4 +16,10 @@ export class CatsController {
   async findAll(): Promise<Cat[]> {
     return this.catsService.findAll();
   }
+
+  @Get(':id')
+  async findById(@Param('id') id: string): Promise<Cat> {
+    console.log('cat id hit');
+    return this.catsService.findById(id);
+  }
 }
